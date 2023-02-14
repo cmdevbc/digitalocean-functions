@@ -1,5 +1,18 @@
+
+parameters: {}
 packages:
   - name: sample
+    parameters: {}
+    annotations: {}
     actions:
       - name: hello
+        binary: false
+        main: ''
         runtime: 'nodejs:default'
+        web: true
+        parameters: {}
+        environment: {}
+        annotations: {}
+        limits: {}
+environment:
+  DATABASE_URL: ${MONGODB}
